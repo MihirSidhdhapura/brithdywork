@@ -1,0 +1,148 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body Styling */
+body {
+    background: linear-gradient(230deg, #e0280b, #fc829a, #bbaaac);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+    color: rgba(248, 245, 245, 0.916);
+    padding: 10px;
+}
+
+/* Main Container */
+.container {
+    background: rgba(235, 29, 97, 0.432);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+    max-width: 450px;
+    margin: 20px auto;
+    
+}
+
+h1 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    font-family: "Notable", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.card img {
+    /* border-radius: 50%; */
+    border-top-left-radius: 140px;
+    border-bottom-right-radius: 150px;
+    margin: 20px auto;
+    display: block;
+    border: 2px inset #fff8f8cc;
+    max-width: 100%;
+    height: auto;
+}
+
+.message {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    font-family: "Playball", cursive;
+    font-weight: 500;
+    font-style: bold;
+}
+
+/* Button Styling */
+button {
+    background: #ec156ec5;
+    color: white;
+    border: solid 2px rgba(248, 243, 232, 0.096);
+    
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    /* transition: background 0.3s ease; */
+    box-shadow: 2px 4px 5px rgba(44, 15, 15, 0.355);
+}
+
+button:hover {
+    background: #4b434352;
+    box-shadow: 2px 4px 5px rgba(231, 12, 122, 0.994),
+     0px 0px 5px rgb(20, 9, 13),
+     0px 0px 25px rgb(243, 21, 110),
+     0px 0px 3px rgb(192, 4, 85);
+     color:rgb(243, 6, 45);
+}
+button:active{
+    background: #070506;
+    color: rgba(151, 126, 126, 0.737);
+    border: none;
+}
+    /* Surprise Box */
+.surprise {
+    display: none;
+    background: rgba(255, 255, 255, 0.205);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    font-size: 1.1rem;
+    animation: pop 1s ease-in-out;
+    border-top-right-radius: 120px;
+    border-bottom-left-radius: 140px;
+}
+
+
+/* Animation */
+@keyframes pop {
+    0% { transform: scale(0.4); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+.flash {
+    animation: flashEffect 0.3s ease;
+}
+
+@keyframes flashEffect {
+    0% { transform: scale(1.1); opacity: 0.8; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+    .message {
+        font-size: 1rem;
+    }
+    button {
+        font-size: 0.9rem;
+    }
+    .surprise {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 15px;
+    }
+    h1 {
+        font-size: 1.8rem;
+    }
+    .message {
+        font-size: 0.9rem;
+    }
+    button {
+        padding: 8px 16px;
+        font-size: 0.8rem;
+    }
+    .surprise {
+        font-size: 1rem;
+    }
+}

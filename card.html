@@ -3,45 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Birthday Card</title>
-    
-     <style>
-           body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    background-color: #f0e68c;
-    font-family: 'Arial', sans-serif;
-}
-
-.card {
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 300px;
-    text-align: center;
-    padding: 20px;
-}
-
-.card-content h1 {
-    font-size: 2em;
-    color: #ff69b4;
-}
-
-.card-content p {
-    font-size: 1.2em;
-    color: #333;
-}
- </style>
+    <title>Happy Birthday!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Notable&family=Playball&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="card.css">
 </head>
 <body>
-    <div class="card">
-        <div class="card-content">
-            <h1>Happy Birthday!</h1>
-            <p>Wishing you a day filled with love and joy.</p>
-        </div>
-    </div>
+
+
+<!-- Birthday Container -->
+  <div class="container">
+         <div class="card">
+             <img src="my.jpg">
+                 <h1>🎉 Happy Birthday 🎂</h1>
+               <!-- <img src="ds.jpg" alt="birthday girl"> -->
+                <p class="message" id="birthdayMessage">Wishing you a day full of joy, fun, and celebration! 🎈</p>
+                <!-- Surprise Section -->
+               <div class="surprise" id="surpriseBox"></div> <br>
+            <button onclick="showSurprise()"> <a href="birthday.html" style="text-decoration: none; color: white;" target="_blank"> Click for a Surprise!</a></button>   
+     </div>
+</div>
+    <script src="card.js"></script>
 </body>
 </html>

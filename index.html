@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en"> 
+    <head>
+      <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+               <title>sign up</title>
+            <style>
+              body{
+                background-image: url('ff.jpg');
+                margin-top: 40px;
+                background-size: cover;
+                
+                /* background-size: 100%; */
+              }
+                    h1{
+                       color: aliceblue;
+                       text-shadow: 1px 2px 1px black;
+                    }
+                    h1:hover{
+                      color: rgba(49, 46, 47, 0.993);
+                      cursor: pointer;
+                         }
+                   .box{
+                     background: linear-gradient(rgba(24, 18, 18, 0.048),rgba(1, 2, 0, 0.68));
+                     height: 305px;
+                     width: 25%;
+                     margin-top: 50px;
+                     position: sticky;
+                     padding: 20px 20px;
+                     color: rgb(0, 0, 0);
+                     border-style: groove;
+                     border-radius: 20px;
+                   }  
+                   form input[type="text"]{
+                     padding: 10px 50px;
+                     color: rgb(3, 3, 3); 
+                     font-family: sans-serif;
+                     font-size: 15px;
+                     border-bottom: gold;
+                     border-top-left-radius: 10%;
+                     border-bottom-right-radius: 10%;
+                   }
+                   form input[type="password"]{
+                     padding: 10px 50px;
+                     color: rgb(3, 3, 3); 
+                     font-family: sans-serif;
+                     font-size: 15px;
+                     border-bottom: gold;
+                     border-top-left-radius: 10%;
+                     border-bottom-right-radius: 10%;
+                  }
+                   form input[type="submit"]{
+                        margin: 25px 0px;
+                        padding: 10px 25px;
+                        border: 1px solid black;
+                        border-radius: 800px;
+                        background-color: rgb(139, 128, 128);
+                        color:rgb(8, 0, 0);
+                        cursor: pointer;
+                        transition: 0.2s;
+                   }
+                   form input[type="submit"]:hover{
+
+                           background: transparent;
+                           border: 2px solid rgb(0, 0, 0); 
+                           border-radius: 100px;
+                   }  
+                   .rgt{
+                     
+                        margin-top: 10px;
+                        margin-left: 930px; 
+                        padding: 0px 1px;
+                   }
+                   .log a{
+                        text-decoration: none;
+                        margin: 43px 150px;
+                        padding: 10px 44px;
+                        border: 2px;
+                        border-radius: 800px;
+                        background-color: rgba(0, 0, 0, 0.197);
+                        color:rgb(209, 193, 193);
+                        cursor: pointer;
+                        transition: 0.4s;
+                   }  
+                   .log a:hover{
+                           background: transparent;
+                           border: 1px solid rgb(6, 1, 1);
+                           border-radius: 100px;
+                           color:black;
+}                   
+             </style>   
+ </head>
+    <body>
+      <div class="rgt">
+         <div class="log">
+               
+                   <a href="login from.html"> Login  </a>
+            </div>
+       </div>
+       <center> <br><br>
+          <div class="box">
+             <form id="loginForm"  method="POST">
+                 <h1>Sign Up</h1>
+                        <br>
+                           <input type="text"   id="username"  name="username" placeholder="Enter Your User Name" required> <br><br>
+                        <br>
+                           <input type="password" id="password" name="password"  placeholder=" Enter Your Password"  required><br><br>
+                           <input type="submit" value="Click Now">   <a href="http://" target="_blank" rel="noopener noreferrer"></a>
+                          
+           </form>
+           </div> 
+         </center>  
+
+<Script>  
+document.getElementById('loginForm').addEventListener('submit', function(e) { e.preventDefault();
+      
+        const username = document.getElementById('username').value;
+        const password = document.getElementById('password').value;
+      
+        // Mock credentials
+        const correctUsername = 'mihir';
+        const correctPassword = '123';
+      
+        
+
+
+
+        setTimeout(() => {
+          if (username === correctUsername && password === correctPassword) {
+            // Redirect or simulate loading of home page
+
+            window.location.href = 'home.html'; // Redirect to home page
+          } else {
+            // Display error message
+                if(username == 'mihir'){
+                    alert(' User name is correct ');
+                   }
+                   else{
+                      alert(' Username  and Password is wrong');
+                   }
+          }
+
+        }, 1000); // Simulate loading time
+      });
+</Script>
+     </body>
+</html>
